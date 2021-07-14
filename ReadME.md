@@ -10,3 +10,9 @@
 # Other user friendly features
 * Weather icons and API are provided via openweatherapi
 * Localstorage is utilized to allow user to return to previous search results listed on screen regardless of the number of page refreshes.
+
+## Link to deployed Weather Application:
+* https://chemacenturion.github.io/Weather_Application/
+
+# Screenshot of deployed application:
+* ![Weather Application](https://github.com/chemacenturion/Weather_Application/blob/main/assets/Screenshot%20(14).png)
