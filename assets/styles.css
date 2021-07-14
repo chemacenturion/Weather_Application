@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     font-family: 'Times New Roman', Times, serif;
@@ -7,7 +13,7 @@ body {
     background: linear-gradient(0.25turn, #6b82e4f5, #03104bf5);
     color: white;
     font-size: 18px;
-    padding: 1px;
+    padding: 10px;
     justify-content: center;
     text-align: center;
 }
@@ -15,7 +21,8 @@ body {
 .search h2 {
     font-size: 25px;
 }
-
+/* elected to utilize the grid function instead of listing localStorage results inside an aside bar style */
+/* trouble shooting was difficult, but goal was to match README demo as close as possible to improve my CSS skills */
 .container {
     display: grid;
     grid-template-columns: 250px 300px;
@@ -30,6 +37,7 @@ body {
     grid-row:span 2;
     justify-content: center;
     text-align: center;
+    padding: 5px;
 }
 
 .search input {
@@ -40,7 +48,7 @@ body {
 
 .searchBtn {
     padding: 10px;
-    width: 225px;
+    width: 200px;
     background-color: rgb(133, 167, 231);
     color: white;
     font-size: 15px;
@@ -50,7 +58,7 @@ body {
 .present_day_container {
     grid-row: span 1;
     border: solid 1px black;
-    justify-content: right;
+    justify-content: space-around;
     text-align: left;
     width:75vw;
     padding: 10px;
@@ -71,11 +79,18 @@ body {
 
 .five_day_forecast {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     justify-content: space-around;
+    background: #7681bef5;
     padding: 50px;
+    margin: 10px;
+    color: white;
 }
 
 .container_forecast h2 {
     text-align: left;
+}
+
+#todaysDate {
+    font-size: 20px;
 }

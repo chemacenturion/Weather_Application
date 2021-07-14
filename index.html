@@ -6,85 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
     <link rel=stylesheet href="./assets/styles.css"/>
+<!-- create header for weather dashboard -->
 </head>
     <header class="dashboard">
         <h1>Weather Dashboard</h1>
     </header>
-
+<!-- create main section encompassing search button, today's forecast and five day forecast -->
     <main>
+        <!-- create an input field for user to input city and a search button below to search -->
         <div class="container" id="current_day">
             <div class="search">
                 <h2>Search for a City:</h2>
                 <input type="text" class="search" id="city_search">
                 <br>
                 <br>
-                <button class="searchBtn">Search</button>
+                <button type="submit" class="searchBtn">Search</button>
             </div>
-
+            <!-- create present day container and wrap present day forecast inside -->
+            <!-- IMPORTANT! Assignment says to include Temp,Wind,Humidity, AND a COLOR CODED UV INDEX -->
             <div class="present_day_container" id="today">
-                <div class="city" id="city_search_result">Philadelphia</div>
-                <div class="day" id="date">July 13th, 2021</div>
+                <div class="city" id="city_search_result">
+                    <p id="todaysDate"></p>
+                </div>
                 <div class="weather_data" id="data">
                     <div class="weather_info">
                         <div>Temperature:</div>
-                        <div>84*F</div>
+                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div>Wind:</div>
-                        <div>7 mph</div>
+                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div>Humidity:</div>
-                        <div>75%</div>
+                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div>UV Index:</div>
-                        <div><span>2.8</span></div>
+                        <div><span></span></div>
                     </div>
                 </div>
             </div>
-
+            <!-- create container to display 5 day forecast displaying temp,wind, and humidity-->
             <div class="container_forecast" id="forecast">
                 <h2>5-Day Forecast:</h2>
                 
-                <div class="five_day_forecast" id="weekday">
-                    <div class=date>7/14/2021</div>
-                    <img></img>
-                    <div class="temp">84*F</div>
-                    <div class="wind">7 mph</div>
-                    <div class="humidity">75%</div>
+                <div class="five_day_forecast">
+                    <div class=date id="weekday1"></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
+                    <div class="temp">Temperature:</div>
+                    <div class="wind">Wind:</div>
+                    <div class="humidity">Humidity:</div>
                 </div>
     
-                <div class="five_day_forecast" id="weekday">
-                    <div class=date>7/15/2021</div>
-                    <img></img>
-                    <div class="temp">84*F</div>
-                    <div class="wind">7 mph</div>
-                    <div class="humidity">75%</div>
+                <div class="five_day_forecast">
+                    <div class=date id="weekday2"></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
+                    <div class="temp">Temperature:</div>
+                    <div class="wind">Wind:</div>
+                    <div class="humidity">Humidity:</div>
                 </div>
     
-                <div class="five_day_forecast" id="weekday">
-                    <div class=date>7/16/2021</div>
-                    <img></img>
-                    <div class="temp">84*F</div>
-                    <div class="wind">7 mph</div>
-                    <div class="humidity">75%</div>
+                <div class="five_day_forecast">
+                    <div class=date id="weekday3"></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
+                    <div class="temp">Temperature:</div>
+                    <div class="wind">Wind:</div>
+                    <div class="humidity">Humidity:</div>
                 </div>
     
-                <div class="five_day_forecast" id="weekday">
-                    <div class=date>7/17/2021</div>
-                    <img></img>
-                    <div class="temp">84*F</div>
-                    <div class="wind">7 mph</div>
-                    <div class="humidity">75%</div>
+                <div class="five_day_forecast">
+                    <div class=date id="weekday4"></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
+                    <div class="temp">Temperature:</div>
+                    <div class="wind">Wind:</div>
+                    <div class="humidity">Humidity:</div>
                 </div>
     
-                <div class="five_day_forecast" id="weekday">
-                    <div class=date>7/18/2021</div>
-                    <img></img>
-                    <div class="temp">84*F</div>
-                    <div class="wind">7 mph</div>
-                    <div class="humidity">75%</div>
+                <div class="five_day_forecast">
+                    <div class=date  id="weekday5"></div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
+                    <div class="temp">Temperature:</div>
+                    <div class="wind">Wind:</div>
+                    <div class="humidity">Humidity:</div>
                 </div>
             </div>
 
@@ -92,7 +96,9 @@
 
     </main>
 <body>
-    
+    <!-- insert moment.js link as well as js script tag and jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 </html>
