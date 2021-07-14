@@ -11,20 +11,19 @@
         <h1>Weather Dashboard</h1>
     </header>
 
-    <aside class="aside">
-        <h2>Search for a City:</h2>
-        <input type="text" class="search" id="city_search">
-        <button class="searchBtn"></button>
-    </aside>
-
     <main>
         <div class="container" id="current_day">
-            <div class="present_day_container" id="today">
-                <div class="city" id="city_search_result">
-                    Philadelphia</div>
-                <div class="day" id="date">
-                    July 13th, 2021</div>
+            <div class="search">
+                <h2>Search for a City:</h2>
+                <input type="text" class="search" id="city_search">
+                <br>
+                <br>
+                <button class="searchBtn">Search</button>
             </div>
+
+            <div class="present_day_container" id="today">
+                <div class="city" id="city_search_result">Philadelphia</div>
+                <div class="day" id="date">July 13th, 2021</div>
                 <div class="weather_data" id="data">
                     <div class="weather_info">
                         <div>Temperature:</div>
@@ -43,51 +42,54 @@
                         <div><span>2.8</span></div>
                     </div>
                 </div>
+            </div>
+
+            <div class="container_forecast" id="forecast">
+                <h2>5-Day Forecast:</h2>
+                
+                <div class="five_day_forecast" id="weekday">
+                    <div class=date>7/14/2021</div>
+                    <img></img>
+                    <div class="temp">84*F</div>
+                    <div class="wind">7 mph</div>
+                    <div class="humidity">75%</div>
+                </div>
+    
+                <div class="five_day_forecast" id="weekday">
+                    <div class=date>7/15/2021</div>
+                    <img></img>
+                    <div class="temp">84*F</div>
+                    <div class="wind">7 mph</div>
+                    <div class="humidity">75%</div>
+                </div>
+    
+                <div class="five_day_forecast" id="weekday">
+                    <div class=date>7/16/2021</div>
+                    <img></img>
+                    <div class="temp">84*F</div>
+                    <div class="wind">7 mph</div>
+                    <div class="humidity">75%</div>
+                </div>
+    
+                <div class="five_day_forecast" id="weekday">
+                    <div class=date>7/17/2021</div>
+                    <img></img>
+                    <div class="temp">84*F</div>
+                    <div class="wind">7 mph</div>
+                    <div class="humidity">75%</div>
+                </div>
+    
+                <div class="five_day_forecast" id="weekday">
+                    <div class=date>7/18/2021</div>
+                    <img></img>
+                    <div class="temp">84*F</div>
+                    <div class="wind">7 mph</div>
+                    <div class="humidity">75%</div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="container_forecast" id="forecast">
-            <h2>5-Day Forecast:</h2>
-            
-            <div class="five_day_forecast" id="weekday">
-                <div class=date>7/13/2021</div>
-                <img></img>
-                <div class="temp">84*F</div>
-                <div class="wind">7 mph</div>
-                <div class="humidity">75%</div>
-            </div>
-
-            <div class="five_day_forecast" id="weekday">
-                <div class=date>7/13/2021</div>
-                <img></img>
-                <div class="temp">84*F</div>
-                <div class="wind">7 mph</div>
-                <div class="humidity">75%</div>
-            </div>
-
-            <div class="five_day_forecast" id="weekday">
-                <div class=date>7/13/2021</div>
-                <img></img>
-                <div class="temp">84*F</div>
-                <div class="wind">7 mph</div>
-                <div class="humidity">75%</div>
-            </div>
-
-            <div class="five_day_forecast" id="weekday">
-                <div class=date>7/13/2021</div>
-                <img></img>
-                <div class="temp">84*F</div>
-                <div class="wind">7 mph</div>
-                <div class="humidity">75%</div>
-            </div>
-
-            <div class="five_day_forecast" id="weekday">
-                <div class=date>7/13/2021</div>
-                <img></img>
-                <div class="temp">84*F</div>
-                <div class="wind">7 mph</div>
-                <div class="humidity">75%</div>
-            </div>
-        </div>
     </main>
 <body>
     
