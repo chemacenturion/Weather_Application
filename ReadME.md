@@ -15,3 +15,4 @@
 * https://chemacenturion.github.io/Weather_Application/
 
 # Screenshot of deployed application:
+* ![Weather Application](https://github.com/chemacenturion/Weather_Application/blob/main/assets/Screenshot%20(15).png)
