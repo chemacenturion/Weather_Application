@@ -17,10 +17,12 @@
         <div class="container" id="current_day">
             <div class="search">
                 <h2>Search for a City:</h2>
-                <input type="text" class="search" id="city_search">
+                <input type="text" class="search" id="city_search" placeholder="Enter City Name">
                 <br>
-                <br>
-                <button type="submit" class="searchBtn">Search</button>
+                <button type="submit" class="searchBtn" id="searchBtn">Search</button>
+                <ul class="search-list">
+
+                </ul>
             </div>
             <!-- create present day container and wrap present day forecast inside -->
             <!-- IMPORTANT! Assignment says to include Temp,Wind,Humidity, AND a COLOR CODED UV INDEX -->
@@ -29,21 +31,20 @@
                     <p id="todaysDate"></p>
                 </div>
                 <div class="weather_data" id="data">
+                    <div class ="weather_info">
+                        <div id="icon"><img id="wicon" src=""></div>
+                    </div>
                     <div class="weather_info">
                         <div id= "currentTemp">Temperature:</div>
-                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div id= "currentWind">Wind:</div>
-                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div id="currentHumidity">Humidity:</div>
-                        <div></div>
                     </div>
                     <div class="weather_info">
                         <div id="currentUV">UV Index:</div>
-                        <div><span></span></div>
                     </div>
                 </div>
             </div>
@@ -55,41 +56,41 @@
                     <div class=date id="weekday1"></div>
                     <!-- Make 10d dynamic with `` and append the img from the js with the code inside the weather 0 objects -->
                     <img src="http://openweathermap.org/img/wn/01n@2x.png"></img>
-                    <div class="temp">Temperature:</div>
-                    <div class="wind">Wind:</div>
-                    <div class="humidity">Humidity:</div>
+                    <div id="tempTwo">Temperature:</div>
+                    <div id="windTwo">Wind:</div>
+                    <div id="humidityTwo">Humidity:</div>
                 </div>
     
                 <div class="five_day_forecast">
                     <div class=date id="weekday2"></div>
                     <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
-                    <div class="temp">Temperature:</div>
-                    <div class="wind">Wind:</div>
-                    <div class="humidity">Humidity:</div>
+                    <div id="tempThree">Temperature:</div>
+                    <div id="windThree">Wind:</div>
+                    <div id="humidityThree">Humidity:</div>
                 </div>
     
                 <div class="five_day_forecast">
                     <div class=date id="weekday3"></div>
                     <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
-                    <div class="temp">Temperature:</div>
-                    <div class="wind">Wind:</div>
-                    <div class="humidity">Humidity:</div>
+                    <div id="tempFour">Temperature:</div>
+                    <div id="windFour">Wind:</div>
+                    <div id="humidityFour">Humidity:</div>
                 </div>
     
                 <div class="five_day_forecast">
                     <div class=date id="weekday4"></div>
                     <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
-                    <div class="temp">Temperature:</div>
-                    <div class="wind">Wind:</div>
-                    <div class="humidity">Humidity:</div>
+                    <div id="tempFive">Temperature:</div>
+                    <div id="windFive">Wind:</div>
+                    <div id="humidityFive">Humidity:</div>
                 </div>
     
                 <div class="five_day_forecast">
                     <div class=date  id="weekday5"></div>
                     <img src="http://openweathermap.org/img/wn/10d@2x.png"></img>
-                    <div class="temp">Temperature:</div>
-                    <div class="wind">Wind:</div>
-                    <div class="humidity">Humidity:</div>
+                    <div id="tempSix">Temperature:</div>
+                    <div id="windSix">Wind:</div>
+                    <div id="humiditySix">Humidity:</div>
                 </div>
             </div>
 

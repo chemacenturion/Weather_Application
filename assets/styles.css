@@ -94,3 +94,20 @@ body {
 #todaysDate {
     font-size: 20px;
 }
+
+/* CSS properties for UV Index color coding */
+.favorable {
+    background-color: #2afd00;
+    color: white;
+}
+  
+.moderate {
+    background-color: #fbff00;
+    color: white;
+ }
+  
+.severe {
+    background-color: #ff0000;
+    color: white;
+}
+  
